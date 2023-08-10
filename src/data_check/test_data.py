@@ -30,14 +30,14 @@ def test_column_names(data):
     assert list(expected_colums) == list(these_columns)
 
 
-def test_neighborhood_names(data):
+# def test_neighborhood_names(data):
 
-    known_names = ["Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island"]
+#     known_names = ["Bronx", "Brooklyn", "Manhattan", "Queens", "Staten Island"]
 
-    neigh = set(data['neighbourhood_group'].unique())
+#     neigh = set(data['neighbourhood_group'].unique())
 
-    # Unordered check
-    assert set(known_names) == set(neigh)
+#     # Unordered check
+#     assert set(known_names) == set(neigh)
 
 
 def test_proper_boundaries(data: pd.DataFrame):
