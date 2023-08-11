@@ -67,7 +67,8 @@ def go(args):
     )
 
     logger.info("Preparing sklearn pipeline")
-
+    logger.info(f"xtrain_shape: {X_train.shape}")
+    logger.info(f"ytrain_shape: {y_train.shape}")
     sk_pipe, processed_features = get_inference_pipeline(rf_config, args.max_tfidf_features)
 
     # Then fit it to the X_train, y_train data
